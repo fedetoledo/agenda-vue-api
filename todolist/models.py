@@ -19,16 +19,17 @@ class Subject(models.Model):
     schedule1 = models.CharField(max_length=30, default="No Schedule")
     schedule2 = models.CharField(max_length=30, null="No Schedule")
     color = models.CharField(max_length=7 ,null=True)
+    userUid = models.CharField(max_length=35)
     
     def __str__(self):
         return self.name
     
-
 class Exam(models.Model):
     date = models.DateTimeField()
     grade = models.FloatField(default=0)
     subject = models.ForeignKey(Subject, on_delete=models.CASCADE)
     typeOf = models.CharField(max_length=7, default="Parcial")
+    userUid = models.CharField(max_length=35)
 
 class Todo(models.Model):
     title = models.CharField(max_length=100)
@@ -36,5 +37,4 @@ class Todo(models.Model):
     priority = models.CharField(choices=P_CHOICE, max_length=10)
     completed = models.BooleanField(default=False)
     subject = models.ForeignKey(Subject, on_delete=models.CASCADE)
-    
-
+    userUid = models.CharField(max_length=35)

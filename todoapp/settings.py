@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '+f%$r2rbep%&+luyu789gdvvd_#8p@#l2$*mf$ci--iir2eyz3'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['safe-coast-17254.herokuapp.com']
+ALLOWED_HOSTS = ['agenda-vue-django-api.herokuapp.com']
 
 
 # Application definition
