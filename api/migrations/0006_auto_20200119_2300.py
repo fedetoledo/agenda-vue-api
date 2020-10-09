@@ -6,7 +6,7 @@ from django.db import migrations
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('todolist', '0005_remove_todo_timestamp'),
+        ('api', '0005_remove_todo_timestamp'),
     ]
 
     operations = [

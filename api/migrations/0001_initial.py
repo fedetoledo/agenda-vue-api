@@ -30,7 +30,7 @@ class Migration(migrations.Migration):
                 ('priority', models.CharField(choices=[(2, 'high'), (1, 'middle'), (0, 'low')], max_length=10)),
                 ('timestamp', models.DateTimeField(auto_now_add=True)),
                 ('completed', models.BooleanField(default=False)),
-                ('subject', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='todolist.Subject')),
+                ('subject', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='api.Subject')),
             ],
         ),
         migrations.CreateModel(
@@ -39,7 +39,7 @@ class Migration(migrations.Migration):
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('date', models.DateTimeField()),
                 ('result', models.FloatField(default=0)),
-                ('subject', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='todolist.Subject')),
+                ('subject', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='api.Subject')),
             ],
         ),
     ]

@@ -6,7 +6,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('todolist', '0006_auto_20200119_2300'),
+        ('api', '0006_auto_20200119_2300'),
     ]
 
     operations = [

@@ -6,7 +6,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('todolist', '0010_subject_typeof'),
+        ('api', '0010_subject_typeof'),
     ]
 
     operations = [
